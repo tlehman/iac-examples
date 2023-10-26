@@ -1,7 +1,7 @@
 #!/bin/sh
-sudo apt install puppet
+wget https://apt.puppet.com/puppet8-release-focal.deb
+sudo dpkg -i puppet8-release-focal.deb
 puppet module install puppetlabs-apt
 puppet module install puppet-nginx
 puppet module install puppet-postgresql
-puppet module install jfryman-nginx # or the maintained fork/variant
 puppet module install puppet-rbenv
